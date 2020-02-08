@@ -18,3 +18,6 @@ User type in the airport name from the user interface, and our api print out the
 - The function **codetoname(airportname)** in the file `currentweather.py`covert airport name to corresponding city name with the data of file `airports.csv`.
 - The **main function** of the file `currentweather.py`use *OpenWeatherMAP API* and city name to get the weather data of the city.
 - The function **print_current_weather(data)** in the file `currentweather.py`filters the weather data we need and print it out.
+
+## OpenWeatherMap API:
+-[apiweb](https://openweathermap.org/current)
