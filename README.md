@@ -31,8 +31,11 @@ User type in the airport name from the user interface, and our api print out the
 ## Project Demo:
 
 ### Case 1:
-
+![case1](https://github.com/BUEC500C1/api-design-jinyu-tn/blob/master/case1.png)
+![case1result](https://github.com/BUEC500C1/api-design-jinyu-tn/blob/master/case1result.png)
 
 ### Case 2:
-
+![case2](https://github.com/BUEC500C1/api-design-jinyu-tn/blob/master/case2.png)
+![case2result](https://github.com/BUEC500C1/api-design-jinyu-tn/blob/master/case2result.png)
 ### Pytest result:
+![pytest](https://github.com/BUEC500C1/api-design-jinyu-tn/blob/master/pytest.png)
