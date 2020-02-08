@@ -12,8 +12,8 @@ api-design-jinyu-tn created by GitHub Classroom
 
 ## Module description：
 
-### Input module:
-User type in the airport name from the user interface.
+### Input and output module:
+User type in the airport name from the user interface, and our api print out the result to the user interface.
 ### Data Management module
 - The function **codetoname(airportname)** in the file 「currentweather.py」covert airport name to corresponding city name with the data of file 「airports.csv」.
 - The **main function** of the file 「currentweather.py」use *OpenWeatherMAP API* and city name to get the weather data of the city.
