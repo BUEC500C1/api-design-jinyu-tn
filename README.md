@@ -10,6 +10,11 @@ api-design-jinyu-tn created by GitHub Classroom
 * As a stuff of a company, I want to know the weather of the airport so that I can book appropriate tickets for my boss.
 * As a uber driver, I want to know whether the airport is rainning so that I can know if I can get more orders.
 
-## Project description：
+## Module description：
 
-
+### Input module:
+User type in the airport name from the user interface.
+### Data Management module
+- The function **codetoname(airportname)** in the file 「currentweather.py」covert airport name to corresponding city name with the data of file 「airports.csv」.
+- The **main function** of the file 「currentweather.py」use *OpenWeatherMAP API* and city name to get the weather data of the city.
+- The function **print_current_weather(data)** in the file 「currentweather.py」filters the weather data we need and print it out.
