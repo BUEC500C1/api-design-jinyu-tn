@@ -20,7 +20,7 @@ api-design-jinyu-tn created by GitHub Classroom
 
 ### Input and Output Module:
 
-* Input: Go to the *currentweather.py* and change the input of getweather() under *if __name__ == '__main__':*
+* Input: Go to the *currentweather.py* and change the input of getweather() under "if __name__ == '__main__':"
 
       `getweather("Airport Name")`
  
