@@ -13,13 +13,15 @@ import csv
 #get the columns of the airport names and the city names
 
 def codetoname(airportname):
-    with open('/Users/taimaame/bu/2020Spring/EC500/airports.csv','r+') as csvfile:
+    with open('./airports.csv','r+') as csvfile:
         reader = csv.reader(csvfile)
         name_column = [row[3] for row in reader]
-    with open('/Users/taimaame/bu/2020Spring/EC500/airports.csv','r+') as csvfile:
+    with open('./airports.csv','r+') as csvfile:
         reader = csv.reader(csvfile)    
         city_column = [row[10] for row in reader]
-    
+    if airportname not in name_column:
+        print('Wrong airport name!')
+        return "Wrong"
     index = name_column.index(airportname)
     city = city_column[index]
     print('The airport is at',city,'.')
@@ -36,16 +38,28 @@ def print_current_weather(data):
     print('Description of the weather :',weather[0]['description'])
     
 
-def main():
-    airportname = input('Enter your airport name : ') 
+def getweather(airportname):
+    #airportname = input('Enter your airport name : ') 
     city = codetoname(airportname)
-    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid=ae031c0e20dd02f8f26bd97e20697016'.format(city)
-    res = requests.get(url)
-    data = res.json()
-    print_current_weather(data)
+
+    if city == "Wrong":
+        return False
+    else:
+        url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid=ae031c0e20dd02f8f26bd97e20697016'.format(city)
+        res = requests.get(url)
+        data = res.json()
+        print_current_weather(data)
+        return True
+
 
 if __name__ == '__main__':
-    main()
+    #print(getweather("R J D Heliport"))
+    #print(getweather("R J Heliport"))
+    #print(getweather("Bailey Genation Station Heliport"))
+    getweather("Kitchen Creek Helibase Heliport")
+    #print(getweather("Lt World Airport"))
+    getweather("Bailey Generation Station Heliport")
+
 
 
 
