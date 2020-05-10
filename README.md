@@ -21,22 +21,26 @@ api-design-jinyu-tn created by GitHub Classroom
 ### Input and Output Module:
 
 * Input: Go to the *currentweather.py* and change the input of getweather() under *if __name__ == '__main__':*
- `getweather("Airport Name")`
+
+      `getweather("Airport Name")`
  
 * Input examples:
+  `getweather("Kitchen Creek Helibase Heliport")`
 
-`getweather("Kitchen Creek Helibase Heliport")`
-
-`getweather("Bailey Generation Station Heliport")`
+  `getweather("Bailey Generation Station Heliport")`
 
 * Output: I just simplified the output, it contains the 'The airport is at which city', 'Current humidity','Current temperature','Maximum temperature','minimum temperature','The degree of wind'and 'Description of the weather'.
 
 * Output examples:
-`('The airport is at', 'Chesterton', '.')`
-`('Current temperature :', 284.57, ',feels like :', 278.46)`
-`('Maximum temperature :', 285.37, ',minimum temperature :', 283.71)`
-`('The degree of wind:', 230)`
-`('Description of the weather :', u'clear sky')`
+  `('The airport is at', 'Chesterton', '.')`
+
+ `('Current temperature :', 284.57, ',feels like :', 278.46)`
+
+ `('Maximum temperature :', 285.37, ',minimum temperature :', 283.71)`
+
+ `('The degree of wind:', 230)`
+
+ `('Description of the weather :', u'clear sky')`
 
 ### Data Management Module
 - The function **codetoname(airportname)** in the file `currentweather.py`covert airport name to corresponding city name with the data of file `airports.csv`.
